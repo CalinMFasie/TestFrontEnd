@@ -55,56 +55,8 @@ public class AddUser {
         PageFactory.initElements(driver, this);
     }
 
-    public WebElement getAddUserButton() {
-        return addUserButton;
-    }
-
-    public WebElement getUsername() {
-        return username;
-    }
-
-    public WebElement getFullName() {
-        return fullName;
-    }
-
-    public WebElement getTraitPerfectionist() {
-        return traitPerfectionist;
-    }
-
-    public WebElement getGenderMale() {
-        return genderMale;
-    }
-
-    public WebElement getInsertedUsername() {
-        return insertedUsername;
-    }
-
-    public WebElement getInsertedEmail() {
-        return insertedEmail;
-    }
-
-    public WebElement getInsertedFullName() {
-        return insertedFullName;
-    }
-
-    public WebElement getEmail() {
-        return email;
-    }
-
-    public WebElement getPassword() {
-        return password;
-    }
-
-    public WebElement getSubmitButton() {
-        return submitButton;
-    }
-
     public WebElement getxButton() {
         return xButton;
-    }
-
-    public WebElement getInsertedNecessaryUsername() {
-        return insertedNecessaryUsername;
     }
 }
 

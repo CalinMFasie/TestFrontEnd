@@ -31,7 +31,24 @@ public class LoginTest {
     }
 
     @Test
-    public void verifyLogin() {
+    public void loginWithoutCredentials() {
+        loginPage.getLoginButton().click();
+        Assert.assertEquals(actualTitle, expectedTitle);
+    }
+
+    @Test(priority = 1)
+    public void loginWithCredentials() {
+        driver.get(BASE_URL);
+        loginPage.getUsername().sendKeys("User1");
+        loginPage.getPassword().sendKeys("Pass1");
+        loginPage.getLoginButton().click();
+        Assert.assertEquals(actualTitle, expectedTitle);
+    }
+
+    @Test(priority = 2)
+    public void loginWithUsernameOnly() {
+        driver.get(BASE_URL);
+        loginPage.getUsername().sendKeys("User1");
         loginPage.getLoginButton().click();
         Assert.assertEquals(actualTitle, expectedTitle);
     }

@@ -63,11 +63,6 @@ public class AddUserTest {
         boolean isFullNameInserted = addUser.getInsertedFullName().isDisplayed();
         Assert.assertTrue(isFullNameInserted);
 
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ie) {
-        }
     }
 
     @Test(priority = 1)
@@ -88,12 +83,7 @@ public class AddUserTest {
         boolean isNecessaryUserNameInserted = addUser.getInsertedNecessaryUsername().isDisplayed();
         Assert.assertTrue(isNecessaryUserNameInserted);
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ie) {
-        }
     }
-
 
     @AfterClass
     public void afterClass() {

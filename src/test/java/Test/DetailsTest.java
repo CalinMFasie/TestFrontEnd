@@ -28,6 +28,10 @@ public class DetailsTest {
     @Test
     public void giveNewUser_expectDetails() {
         addNewUser();
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException ie) {
+        }
         detailsPage.getDetailsButton().click();
         driver.get(BASE_URL);
         driver.navigate().refresh();
